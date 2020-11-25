@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(231, 231, 231);
+    background-color: rgb(109, 109, 109);
+}
+
+
+/* Navigation menu */
+#navbar {
+    background-color: #66c273;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nav-list {
+    margin: 0;
+    list-style-type: none;
+    list-style: none;
+    text-align: right;
+    
+}
+
+.nav-list li {
+    display: inline-block;
+    
+}
+
+.nav-list a{
+    text-decoration: none;
+    font-size: 2.2rem;
+    display: block;
+    padding: 2rem;
+    color: rgb(231, 231, 231);
+}
