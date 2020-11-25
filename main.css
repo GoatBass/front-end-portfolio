@@ -9,6 +9,16 @@ body {
     background-color: rgb(109, 109, 109);
 }
 
+h1 {
+    font-size: 80px;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 50px;
+    color: #66c273;
+    margin-top: 0;
+}
 
 /* Navigation menu */
 #navbar {
@@ -38,3 +48,51 @@ body {
     padding: 2rem;
     color: rgb(231, 231, 231);
 }
+
+/* Sections */
+#welcome-section {
+    text-align: center;
+    padding: 200px;
+}
+
+.projects-section {
+    text-align: center;
+    padding: 5rem 2rem;
+    background-color: rgb(77, 144, 170);;
+}
+
+.projects-section-header {
+  max-width: 50%;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid rgb(231, 231, 231);
+  color: rgb(231, 231, 231);
+}
+
+.project-title {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+
+  .project-title a {
+      text-decoration: none;
+  }
+
+  .project-image {
+    height: calc(100% - 2rem);
+    width: 100%;
+    object-fit: cover;
+    padding-top: 50px;
+  }
+
+  .projects-title {
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+    background-color: lightslategrey;
+    margin: 0;
+    color: rgb(231, 231, 231);
+  }
