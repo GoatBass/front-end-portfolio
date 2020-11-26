@@ -145,6 +145,13 @@ h2 {
   background-color: lightslategrey;
   margin: 0;
   color: rgb(231, 231, 231);
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.377);
+  transition: 0.3s;
+}
+
+.projects-title:hover {
+  transform: translateY(-8px);
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.377);
 }
 
 .contact-section {
@@ -173,6 +180,7 @@ h2 {
 .contact-section-header > p {
   font-style: italic;
   margin-bottom: 50px;
+  font-size: 1.2rem;
 }
 
 .contact-details {
@@ -194,6 +202,7 @@ h2 {
 /* Footer */
 footer {
   font-weight: 300;
+  font-size: 1.2rem;
   display: flex;
   justify-content: space-evenly;
   padding: 3rem;
