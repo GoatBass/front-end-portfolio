@@ -134,10 +134,9 @@ h2 {
 }
 
 .project-image {
-  height: calc(100% - 2rem);
+  /* height: calc(100% - 2rem); */
   width: 100%;
   object-fit: cover;
-  padding-top: 50px;
 }
 
 .projects-title {
