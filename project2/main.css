@@ -39,6 +39,7 @@ body::before {
 
 h1 {
     line-height: 1.2;
+    font-size: 3.5rem;
 }
 
 p {
