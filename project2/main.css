@@ -2,6 +2,173 @@
     box-sizing: border-box;
 }
 
-#age {
-    width: 80px;
+:root {
+    --primary-color: #7842a5e3;
+    --secondary-color: rgba(74, 95, 185, 0.8);
+    --success-color: #22c73edc;
+    --letter-color: #f3f3f3;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.4rem;
+    background-color: var(--primary-color);
+    color: var(--letter-color);
+    margin: 0;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(
+        115deg,
+        rgba(143, 128, 44, 0.63),
+        rgba(117, 61, 155, 0.582)
+      ),
+      url(https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+h1 {
+    line-height: 1.2;
+}
+
+p {
+    font-weight: 1.125rem;
+}
+
+h1,
+p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+input,
+button,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button {
+    border: none;
+}
+
+.container {
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+header {
+    padding: 0 0.625rem;
+    margin-bottom: 1.875rem;
+    text-align: center;
+}
+
+#description {
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.clue {
+    margin-left: 0.25rem;
+    font-size: 0.9rem;
+}
+
+/* Form Styling */
+
+form {
+    background: var(--secondary-color);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.8rem;
+}
+
+@media (min-width: 480px){
+    form {
+        padding: 2.5rem;
+    }
+}
+
+.form-element {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+
+.form-control{
+    display: block;
+    width: 100%;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #0380fdce;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.315);
+}
+
+.input-radio, .input-checkbox {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+.input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 5px;
+    background: silver;
+    cursor: pointer;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.377);
+    transition: 0.3s;
+}
+
+.submit-button:hover {
+    color: inherit;
+    transform: translateY(-3.5px);
+    background: var(--success-color);
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.377);
 }

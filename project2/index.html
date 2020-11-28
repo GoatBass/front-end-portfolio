@@ -6,71 +6,95 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Survey Form</title>
         <link rel="stylesheet" type="text/css" href="main.css">
+        <!-- Noto Sans JP font link -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <header>
-            <h1 id="title">Fill it to work with me!</h1>
-            <p id="description">Just some information to know what we could do
-                together.</p>
-        </header>
-        <form id="survey-form" action="">
-            <div class="form-element">
-                <label id="name-label" for="name">Full Name:</label>
-                <input type="text" name="name" id="name"
-                    placeholder="Enter your name" required />
-            </div>
-            <div class="form-element">
-                <label id="email-label" for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Your email here" required>
-            </div>
-            <div class="form-element">
-                <label id="number-label" for="age">Select your Age: (Optional)</label>
-                <input type="number" name="age" id="age" min="16" max="65" placeholder="Your Age">
-            </div>
-            <div class="form-element">
-                <label  for=""></label>
-            </div>
-            <div class="form-element">
-                <p>What is your current role/position?</p>
-                <select name="role" id="dropdown" class="form-control" required>
-                    <option disabled selected value>Select current role</option>
-                    <option value="student">Student</option>
-                    <option value="job">Currently Working</option>
-                    <option value="learner">Full Time Learner</option>
-                    <option value="preferNo">Prefer not to answer</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
-            <div class="form-element">
-                <p>Which moment of the day is better to conatct with you?</p>
-                <input type="radio" name="answer" id="morning" value="Morning" for="morning" required><label>Morning</label>
-                <input type="radio" name="answer" id="afternoon" value="Afternoon" for="afternoon" required><label>Afternoon</label>
-                <input type="radio" name="answer" id="noMatter" value="NoMatter" for="noMatter" required><label>Any Moment</label>
-            </div>
-            <div class="form-element">
-                <p>What languages do you prefer to work with? (Check as much as you want)</p>
-                <input type="checkbox" name="prefer" value="html5" required>
-                <label for="prefer">HTML5/CSS3</label><br>
-                <input type="checkbox" name="prefer" value="javascript">
-                <label for="prefer">JavaScript</label><br>
-                <input type="checkbox" name="prefer" value="c">
-                <label for="prefer">C/C++</label><br>
-                <input type="checkbox" name="prefer" value="java">
-                <label for="prefer">JavaBeans</label><br>
-                <input type="checkbox" name="prefer" value="python">
-                <label for="prefer">Python</label><br>
-                <input type="checkbox" name="prefer" value="others">
-                <label for="prefer">Others</label><br>
-            </div>
-            <div class="form-element">
-                <p>Describe yourself in short way</p>
-                <textarea name="description" id="descriptions" class="input-textarea" placeholder="Your description here..." required></textarea>
-            </div>
-            <p>
-                <input type="submit" value="Submit">
-            </p>
-        </form>
+        <div class="container">
+            <header>
+                <h1 id="title">Fill it to work with me!</h1>
+                <p id="description">Just some information to know what we could do
+                    together.</p>
+            </header>
+            <form id="survey-form" action="">
+                <div class="form-element">
+                    <label id="name-label" for="name">Full Name:</label>
+                    <input type="text" class="form-control" name="name" id="name"
+                        placeholder="Enter your name" required />
+                </div>
+                <div class="form-element">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your email here" required>
+                </div>
+                <div class="form-element">
+                    <label id="number-label" for="age">Select your Age: <span class="clue">(Optional)</span></label>
+                    <input type="number" class="form-control" name="age" id="age" min="16" max="65" placeholder="Your Age">
+                </div>
+                <div class="form-element">
+                    <p>What is your current role/position?</p>
+                    <select name="role" id="dropdown" class="form-control" required>
+                        <option disabled selected value>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Currently Working</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="preferNo">Prefer not to answer</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-element">
+                    <p>Which moment of the day is better to conatct with you?</p>
+                    <label>
+                        <input type="radio" class="input-radio" name="answer" id="morning" value="Morning" for="morning" required>
+                        Morning
+                    </label>
+                    <label>
+                        <input type="radio" class="input-radio" name="answer" id="afternoon" value="Afternoon" for="afternoon">
+                        Afternoon
+                    </label>
+                    <label>
+                        <input type="radio" class="input-radio" name="answer" id="noMatter" value="NoMatter" for="noMatter">
+                        Any Moment
+                    </label>
+                </div>
+                <div class="form-element">
+                    <p>What languages do you prefer to work with? <span class="clue">(Check as much as you want)</span></p>
+                    <label for="prefer">
+                        <input type="checkbox" class="input-checkbox" name="prefer" value="html5" required>HTML5/CSS3
+                    </label>
+                    <label for="prefer">
+                        <input type="checkbox" class="input-checkbox" name="prefer" value="javascript">
+                        JavaScript
+                    </label>
+                    <label for="prefer">
+                        <input type="checkbox" class="input-checkbox" name="prefer" value="c">
+                        C/C++
+                    </label>
+                    <label for="prefer">
+                        <input type="checkbox" class="input-checkbox" name="prefer" value="java">
+                        JavaBeans
+                    </label>
+                    <label for="prefer">
+                        <input type="checkbox" class="input-checkbox" name="prefer" value="python">
+                        Python
+                    </label>
+                    <label for="prefer">
+                        <input type="checkbox" class="input-checkbox" name="prefer" value="others">
+                        Others
+                    </label>
+                </div>
+                <div class="form-element">
+                    <p>Describe yourself in short way:</p>
+                    <textarea name="description" id="descriptions" class="input-textarea" placeholder="Your description here..." required></textarea>
+                </div>
+                <p>
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                    </button>
+                </p>
+            </form>
+        </div>
     </body>
 
 </html>
