@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+/* Variables */
+:root {
+  --primary-color: rgb(77, 144, 170);
+  --primary-color-transp: rgba(77, 144, 170, 0.582);
+  --secondary-color: rgb(109, 109, 109);
+  --text-color:  rgb(231, 231, 231);
+}
+
 /* 1200px / 16px = 75em */
 @media (max-width: 75em) {
   html {
@@ -29,8 +37,8 @@
 body {
   margin: 0 auto;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(231, 231, 231);
-  background-color: rgb(109, 109, 109);
+  color: var(--text-color);
+  background-color: var(--secondary-color);
 }
 
 a {
@@ -41,6 +49,7 @@ a {
 h1 {
   font-size: 4rem;
   margin-bottom: 0;
+  text-align: center;
 }
 
 h2 {
@@ -51,7 +60,7 @@ h2 {
 
 /* Navigation menu */
 #navbar {
-  background-color: rgba(77, 144, 170, 0.582);
+  background-color: var(--primary-color-transp);
   margin: 0;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -96,14 +105,20 @@ h2 {
 
 /* Sections */
 #welcome-section {
-  text-align: center;
-  padding: 200px;
+  /* text-align: center;
+  padding: 200px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
 }
 
 .projects-section {
   text-align: center;
   padding: 5rem 2rem;
-  background-color: rgb(77, 144, 170);
+  background-color: var(--primary-color);
 }
 
 @media (max-width: 30.625em) {
@@ -117,15 +132,15 @@ h2 {
 }
 
 .projects-section-header {
-  max-width: 50%;
+  max-width: 640px;
   margin: 0 auto 6rem auto;
-  border-bottom: 0.2rem solid rgb(231, 231, 231);
-  color: rgb(231, 231, 231);
+  border-bottom: 0.2rem solid var(--text-color);
+  color: var(--text-color);
 }
 
 @media (max-width: 28.75em) {
   .projects-section-header {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
@@ -150,7 +165,7 @@ h2 {
   padding: 2rem 0.5rem;
   background-color: lightslategrey;
   margin: 0;
-  color: rgb(231, 231, 231);
+  color: var(--text-color);
   box-shadow: 2px 2px rgba(0, 0, 0, 0.377);
   transition: 0.3s;
 }
@@ -172,7 +187,7 @@ h2 {
 }
 
 .contact-section h2 {
-  color: rgb(231, 231, 231);
+  color: var(--text-color);
   font-size: 6rem;
   margin: 0;
 }
@@ -212,7 +227,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   padding: 3rem;
-  border-top: 4px solid rgb(77, 144, 170);
+  border-top: 4px solid var(--primary-color);
 }
 
 footer > p {
