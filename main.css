@@ -4,8 +4,8 @@
 
 /* Variables */
 :root {
-  --primary-color: rgb(77, 144, 170);
-  --primary-color-transp: rgba(77, 144, 170, 0.582);
+  --primary-color: rgb(64, 143, 112);
+  --primary-color-transp: rgba(64, 143, 112, 0.582);
   --secondary-color: rgb(109, 109, 109);
   --text-color:  rgb(231, 231, 231);
 }
@@ -54,7 +54,7 @@ h1 {
 
 h2 {
   font-size: 2.5rem;
-  color: rgb(101, 193, 230);
+  color:  rgb(77, 218, 161);
   margin-top: 0;
 }
 
@@ -113,7 +113,17 @@ h2 {
   align-items: center;
   width: 100%;
   height: 100vh;
+  background-image: linear-gradient(
+        115deg,
+        rgba(53, 53, 53, 0.63),
+        rgba(55, 87, 173, 0.582)
+      ),
+      url(img/developer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
 
 .projects-section {
   text-align: center;
@@ -136,6 +146,7 @@ h2 {
   margin: 0 auto 6rem auto;
   border-bottom: 0.2rem solid var(--text-color);
   color: var(--text-color);
+  padding-bottom: 20px;
 }
 
 @media (max-width: 28.75em) {
