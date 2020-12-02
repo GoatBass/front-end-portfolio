@@ -43,7 +43,7 @@ body {
 
 a {
   text-decoration: none;
-  color: rgb(231, 231, 231);
+  color: var(--text-color);
 }
 
 h1 {
@@ -89,7 +89,7 @@ h2 {
 
 .nav-list a:hover {
   transform: translateY(8px);
-  background-color: rgb(59, 118, 141);
+  background-color: rgb(41, 87, 68);
   border-radius: 10px;
 }
 
