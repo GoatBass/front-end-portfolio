@@ -8,18 +8,22 @@
         <script
             src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
         <link rel="stylesheet" href="main.css">
+        <!-- Tailwind CDN -->
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
         <!-- Font Awesome -->
         <link rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
             integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
             crossorigin="anonymous" />
+        <!-- AOS Animation CDN -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
 
     <body>
         <header>
             <!-- Navigation Menu -->
-            <nav id="navbar">
-                <ul class="nav-list">
+            <nav data-aos="fade-down" id="navbar__custom">
+                <ul class="nav-list__custom">
                     <li>
                         <a href="#">About</a>
                     </li>
@@ -35,67 +39,61 @@
         <main>
             <!-- Welcome Section -->
             <section id="welcome-section">
-                <h1>Hello there! I'm Eduard</h1>
-                <h2>I'm a web developer</h2>
+                <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000" class="text-7xl font-bold">Hello there! I'm Eduard</h1>
+                <h2 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2000"class="text-4xl font-bold">I'm a Full Stack Developer</h2>
             </section>
             <a name="work"></a>
             <!-- Project Section -->
             <section id="projects" class="projects-section">
-                <h2 class="projects-section-header">These are some of my
+                <h2 data-aos="zoom-in" data-aos-duration="1000" class="projects-section-header text-4xl">These are some of my
                     projects, check them out!</h2>
                 <div class="project-title">
-                    <a href="https://obscure-hamlet-29863.herokuapp.com/"
+                    <a data-aos="fade-right" data-aos-duration="1500" href="https://obscure-hamlet-29863.herokuapp.com/"
                         target="_blank">
                         <img class="project-image" src="img/yelpcamp.png"
                             alt="YelpCamp">
                         <p class="projects-title">Yelp Camp</p>
                     </a>
-                    <a href="project1/index.html" target="_blank">
+                    <a data-aos="zoom-in-down" data-aos-duration="1500" href="https://cliff-project-portfolio.vercel.app/" target="_blank">
                         <img class="project-image" src="img/tribute.png"
                             alt="Cliff Burton Tribute">
                         <p class="projects-title">Cliff's Tribute</p>
                     </a>
-                    <a href="project2/index.html" target="_blank">
+                    <a data-aos="fade-left" data-aos-duration="1500" href="https://form-project-portfolio.vercel.app/" target="_blank">
                         <img class="project-image" src="img/form.png"
                             alt="Form Survey">
                         <p class="projects-title">Survey Form</p>
                     </a>
-                    <!-- <a href="https://obscure-hamlet-29863.herokuapp.com/"
+                    <a data-aos="fade-right" data-aos-duration="1500" href="https://fun-with-flags-frontendchallenge-solution.vercel.app/"
                         target="_blank">
-                        <img class="project-image" src="img/yelpcamp.png"
-                            alt="YelpCamp">
-                        <p class="projects-title">Yelp Camp</p>
+                        <img class="project-image" src="img/flags.png"
+                            alt="Fun With Flags">
+                        <p class="projects-title">Fun With Flags</p>
                     </a>
-                    <a href="https://obscure-hamlet-29863.herokuapp.com/"
+                    <a data-aos="zoom-in-up" data-aos-duration="1500" href="https://clock-app-vue-frontend-challehnger.vercel.app/"
                         target="_blank">
-                        <img class="project-image" src="img/yelpcamp.png"
-                            alt="YelpCamp">
-                        <p class="projects-title">Yelp Camp</p>
+                        <img class="project-image" src="img/clock.png"
+                            alt="Clock App">
+                        <p class="projects-title">Clock App</p>
                     </a>
-                    <a href="https://obscure-hamlet-29863.herokuapp.com/"
-                        target="_blank">
-                        <img class="project-image" src="img/yelpcamp.png"
-                            alt="YelpCamp">
-                        <p class="projects-title">Yelp Camp</p>
-                    </a> -->
                 </div>
             </section>
             <!-- Contact Section -->
             <a name="conatct"></a>
             <section id="contact" class="contact-section">
                 <div class="contact-section-header">
-                    <h2>Let's work on something :D</h2>
+                    <h2>Let's work on something together!</h2>
                     <p>You can find me in any of these!</p>
                 </div>
-                <div class="contact-links">
-                    <a href="http://www.linkedin.com/in/eduard-garcia-arpi-2706801b7"
+                <div data-aos="flip-up" data-aos-duration="1500" class="contact-links">
+                    <a href="http://www.linkedin.com/in/eduard-garcia-arpi"
                         target="_blank" class="btn contact-details"><i
                             class="fab fa-linkedin"></i> Linkedin</a>
                     <a href="https://github.com/GoatBass" target="_blank"
                         class="btn contact-details"><i
                             class="fab fa-github"></i> Github</a>
-                    <a href="#" target="_blank" class="btn contact-details"><i
-                            class="fas fa-at"></i>Mail me</a>
+                    <a href="mailto:edugacv@gmail.com" target="_blank" class="btn contact-details"><i
+                            class="fas fa-at"></i> Mail</a>
                 </div>
             </section>
         </main>
@@ -104,6 +102,12 @@
             <p>This is my first protfolio, hope you will like it!</p>
             <p>&copy; Created by Eduard Garcia Arpi</p>
         </footer>
+        <!-- AOS Scrtipt -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- Script to initialite AOS animate scroll library -->
+        <script>
+            AOS.init();
+        </script>
     </body>
-
+    
 </html>
