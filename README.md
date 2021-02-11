@@ -1,6 +1,4 @@
-"#Front end Portfolio Challenge"
-
-## Welcome! 👋
+## Welcome to my Portfolio! 👋
 
 This projects is been created by **Eduard Garcia Arpi**
 
