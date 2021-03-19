@@ -2,6 +2,6 @@
 
 This projects is been created by **Eduard Garcia Arpi**
 
-Here you can check the [GitHub Repository](https://github.com/GoatBass/front-end-portfolio)
+Here you can check the [Local Website](https://front-end-portfolio-orpin.vercel.app/)
 
 Thanks for checking out this front-end portfolio.
