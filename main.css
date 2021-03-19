@@ -67,6 +67,7 @@ h2 {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
 }
 
 .nav-list__custom {
@@ -171,7 +172,8 @@ h2 {
 
 .project-image {
   /* height: calc(100% - 2rem); */
-  width: 100%;
+  width: 384px;
+  height: 216px;
   object-fit: cover;
 }
 
