@@ -135,6 +135,7 @@ h2 {
   text-align: center;
   padding: 5rem 2rem;
   background-color: var(--primary-color);
+  width: 100%;
 }
 
 @media (max-width: 30.625em) {
@@ -176,6 +177,7 @@ h2 {
   width: 384px;
   height: 216px;
   object-fit: cover;
+  
 }
 
 .projects-title {
@@ -200,6 +202,8 @@ h2 {
   height: 216px;
   perspective: 1000px;
   margin-bottom: 5rem;
+  align-self: center;
+  justify-self: center;
 }
 
 .flip-card-inner {
